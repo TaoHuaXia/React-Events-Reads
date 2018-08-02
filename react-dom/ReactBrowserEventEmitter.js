@@ -19,7 +19,7 @@ import {
   TOP_SUBMIT,
   getRawEventName,
   mediaEventTypes,
-} from './DOMTopLevelEventTypes';
+} from './DOMTopLevelEventTypes'; // 此文件统一处理常量和它对应的浏览器事件类型（进行了一些兼容性的处理，比如鼠标滚轮事件等）
 import {
   setEnabled,
   isEnabled,
@@ -141,7 +141,7 @@ export function listenTo(
     // 检测容器是否已经挂载了对应的顶层事件委托
     // 此处使用了hasOwnProperty以及直接引用的方式来检查是否已经挂载了事件委托（hasOwnProperty的兼容问题）
     if (!(isListening.hasOwnProperty(dependency) && isListening[dependency])) {
-      // 针对不同的事件类型来处理
+      // 针对不同的事件类型来处理，即为使用事件捕获（向下冒泡）还是冒泡事件
       switch (dependency) {
         case TOP_SCROLL:
           trapCapturedEvent(TOP_SCROLL, mountAt);
@@ -176,6 +176,7 @@ export function listenTo(
           }
           break;
       }
+      // 绑定完成后，将对应的事件设为true表示已经绑定了该类型的顶级事件
       isListening[dependency] = true;
     }
   }

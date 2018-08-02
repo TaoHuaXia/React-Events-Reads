@@ -16,7 +16,7 @@ import {
 import getVendorPrefixedEventName from './getVendorPrefixedEventName';
 
 /**
- * To identify top level events in ReactDOM, we use constants defined by this
+ * identify top level events in ReactDOM, we use constants defined by this
  * module. This is the only module that uses the unsafe* methods to express
  * that the constants actually correspond to the browser event names. This lets
  * us save some bundle size by avoiding a top level type -> event name map.
