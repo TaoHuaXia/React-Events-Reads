@@ -138,7 +138,10 @@ export function listenTo(
 
   for (let i = 0; i < dependencies.length; i++) {
     const dependency = dependencies[i];
+    // 检测容器是否已经挂载了对应的顶层事件委托
+    // 此处使用了hasOwnProperty以及直接引用的方式来检查是否已经挂载了事件委托（hasOwnProperty的兼容问题）
     if (!(isListening.hasOwnProperty(dependency) && isListening[dependency])) {
+      // 针对不同的事件类型来处理
       switch (dependency) {
         case TOP_SCROLL:
           trapCapturedEvent(TOP_SCROLL, mountAt);
