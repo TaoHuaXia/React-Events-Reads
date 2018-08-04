@@ -17,7 +17,7 @@ describe('ReactDOMInvalidARIAHook', () => {
   beforeEach(() => {
     jest.resetModules();
     React = require('react');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
 
     mountComponent = function(props) {
       ReactTestUtils.renderIntoDocument(<div {...props} />);

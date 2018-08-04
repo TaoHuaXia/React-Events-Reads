@@ -65,10 +65,10 @@ describe('ReactCompositeComponent', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
     ReactCurrentOwner = require('react')
       .__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner;
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
     PropTypes = require('prop-types');
 
     MorphingComponent = class extends React.Component {

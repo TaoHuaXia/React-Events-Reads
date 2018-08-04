@@ -18,7 +18,7 @@ describe('ReactStrictMode', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   it('should appear in the client component stack', () => {

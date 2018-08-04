@@ -394,7 +394,7 @@ describe('ResponderEventPlugin', () => {
     jest.resetModules();
 
     const ReactDOM = require('react-dom');
-    const ReactDOMUnstableNativeDependencies = require('react-dom/unstable-native-dependencies');
+    const ReactDOMUnstableNativeDependencies = require('coreCode/unstable-native-dependencies');
     EventPluginHub =
       ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
         .EventPluginHub;
@@ -1370,7 +1370,7 @@ describe('ResponderEventPlugin', () => {
     // This test was moved here from the ReactTreeTraversal test since only the
     // ResponderEventPlugin uses `getLowestCommonAncestor`
     const React = require('react');
-    const ReactTestUtils = require('react-dom/test-utils');
+    const ReactTestUtils = require('coreCode/test-utils');
     const ReactTreeTraversal = require('shared/ReactTreeTraversal');
     const ReactDOMComponentTree = require('../../react-dom/src/client/ReactDOMComponentTree');
 

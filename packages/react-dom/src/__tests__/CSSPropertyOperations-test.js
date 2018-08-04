@@ -11,7 +11,7 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactDOMServer = require('react-dom/server');
+const ReactDOMServer = require('coreCode/server');
 
 describe('CSSPropertyOperations', () => {
   it('should automatically append `px` to relevant styles', () => {

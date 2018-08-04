@@ -18,7 +18,7 @@ function initModules() {
   // Reset warning cache.
   jest.resetModuleRegistry();
   React = require('react');
-  ReactDOMServer = require('react-dom/server');
+  ReactDOMServer = require('coreCode/server');
 
   // Make them available to the helpers.
   return {

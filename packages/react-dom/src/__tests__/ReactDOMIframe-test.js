@@ -15,7 +15,7 @@ describe('ReactDOMIframe', () => {
 
   beforeEach(() => {
     React = require('react');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   it('should trigger load events', () => {

@@ -10,7 +10,7 @@
 'use strict';
 
 let React = require('react');
-const ReactTestUtils = require('react-dom/test-utils');
+const ReactTestUtils = require('coreCode/test-utils');
 
 class TextWithStringRef extends React.Component {
   render() {

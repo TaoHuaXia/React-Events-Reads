@@ -19,7 +19,7 @@ describe('ReactDOMServerLifecycles', () => {
     ReactFeatureFlags.warnAboutDeprecatedLifecycles = true;
 
     React = require('react');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   afterEach(() => {

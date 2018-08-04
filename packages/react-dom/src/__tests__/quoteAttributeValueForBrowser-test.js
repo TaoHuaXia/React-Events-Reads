@@ -16,7 +16,7 @@ describe('quoteAttributeValueForBrowser', () => {
   beforeEach(() => {
     jest.resetModules();
     React = require('react');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   it('ampersand is escaped inside attributes', () => {

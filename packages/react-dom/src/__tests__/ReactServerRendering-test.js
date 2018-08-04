@@ -23,7 +23,7 @@ describe('ReactDOMServer', () => {
     jest.resetModules();
     React = require('react');
     PropTypes = require('prop-types');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   describe('renderToString', () => {

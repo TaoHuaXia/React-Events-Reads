@@ -11,7 +11,7 @@
 
 let React = require('react');
 let ReactDOM = require('react-dom');
-let ReactTestUtils = require('react-dom/test-utils');
+let ReactTestUtils = require('coreCode/test-utils');
 
 /**
  * Counts clicks and has a renders an item for each click. Each item rendered
@@ -98,7 +98,7 @@ describe('reactiverefs', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   afterEach(() => {
@@ -180,7 +180,7 @@ describe('ref swapping', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
 
     RefHopsAround = class extends React.Component {
       state = {count: 0};
@@ -398,7 +398,7 @@ describe('creating element with ref in constructor', () => {
   }
 
   it('throws an error', () => {
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
 
     expect(function() {
       ReactTestUtils.renderIntoDocument(<RefTest />);

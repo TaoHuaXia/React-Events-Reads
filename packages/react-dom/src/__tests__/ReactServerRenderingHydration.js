@@ -20,7 +20,7 @@ describe('ReactDOMServerHydration', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   it('should have the correct mounting behavior (old hydrate API)', () => {

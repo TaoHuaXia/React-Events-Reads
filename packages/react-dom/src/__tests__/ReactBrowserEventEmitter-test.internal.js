@@ -63,7 +63,7 @@ describe('ReactBrowserEventEmitter', () => {
     ReactDOM = require('react-dom');
     ReactDOMComponentTree = require('../client/ReactDOMComponentTree');
     ReactBrowserEventEmitter = require('../events/ReactBrowserEventEmitter');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
 
     container = document.createElement('div');
     document.body.appendChild(container);

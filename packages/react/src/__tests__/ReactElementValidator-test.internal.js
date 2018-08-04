@@ -29,7 +29,7 @@ describe('ReactElementValidator', () => {
     ReactFeatureFlags.replayFailedUnitOfWorkWithInvokeGuardedCallback = false;
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
     ComponentClass = class extends React.Component {
       render() {
         return React.createElement('div');

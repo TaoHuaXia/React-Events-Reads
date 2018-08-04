@@ -30,7 +30,7 @@ describe('rendering React components at document', () => {
 
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
   });
 
   describe('with old implicit hydration API', () => {

@@ -18,10 +18,10 @@ describe('ReactServerRenderingBrowser', () => {
   beforeEach(() => {
     jest.resetModules();
     React = require('react');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
     // For extra isolation between what would be two bundles on npm
     jest.resetModuleRegistry();
-    ReactDOMServerBrowser = require('react-dom/server.browser');
+    ReactDOMServerBrowser = require('coreCode/server.browser');
   });
 
   it('provides the same top-level API as react-dom/server', () => {
