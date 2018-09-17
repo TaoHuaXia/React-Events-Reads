@@ -285,6 +285,7 @@ function setInitialDOMProperties(
     } else if (propKey === AUTOFOCUS) {
       // We polyfill it separately on the client during commit.
       // We blacklist it here rather than in the property list because we emit it in SSR.
+    // TODO
     } else if (registrationNameModules.hasOwnProperty(propKey)) {
       if (nextProp != null) {
         if (__DEV__ && typeof nextProp !== 'function') {
