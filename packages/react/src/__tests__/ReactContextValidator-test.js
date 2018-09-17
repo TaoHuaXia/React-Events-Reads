@@ -27,7 +27,7 @@ describe('ReactContextValidator', () => {
     PropTypes = require('prop-types');
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   // TODO: This behavior creates a runtime dependency on propTypes. We should

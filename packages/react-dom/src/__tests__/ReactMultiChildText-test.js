@@ -11,7 +11,7 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactTestUtils = require('react-dom/test-utils');
+const ReactTestUtils = require('coreCode/test-utils');
 
 // Helpers
 const testAllPermutations = function(testCases) {

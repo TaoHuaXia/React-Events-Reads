@@ -22,7 +22,7 @@ function initModules() {
   PropTypes = require('prop-types');
   React = require('react');
   ReactDOM = require('react-dom');
-  ReactDOMServer = require('react-dom/server');
+  ReactDOMServer = require('coreCode/server');
 
   // Make them available to the helpers.
   return {

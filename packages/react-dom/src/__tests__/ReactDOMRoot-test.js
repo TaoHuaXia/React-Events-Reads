@@ -11,7 +11,7 @@
 
 let React = require('react');
 let ReactDOM = require('react-dom');
-let ReactDOMServer = require('react-dom/server');
+let ReactDOMServer = require('coreCode/server');
 let AsyncMode = React.unstable_AsyncMode;
 
 describe('ReactDOMRoot', () => {
@@ -62,7 +62,7 @@ describe('ReactDOMRoot', () => {
     jest.resetModules();
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
     AsyncMode = React.unstable_AsyncMode;
   });
 

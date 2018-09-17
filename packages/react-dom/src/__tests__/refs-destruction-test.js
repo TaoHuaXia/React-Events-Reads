@@ -21,7 +21,7 @@ describe('refs-destruction', () => {
 
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
 
     class ClassComponent extends React.Component {
       render() {

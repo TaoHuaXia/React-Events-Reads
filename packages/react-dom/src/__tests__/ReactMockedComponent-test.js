@@ -19,7 +19,7 @@ describe('ReactMockedComponent', () => {
   beforeEach(() => {
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
 
     MockedComponent = class extends React.Component {
       render() {

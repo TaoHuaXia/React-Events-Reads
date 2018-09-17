@@ -16,7 +16,7 @@ describe('ReactChildren', () => {
   beforeEach(() => {
     jest.resetModules();
     React = require('react');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   it('should support identity for simple', () => {

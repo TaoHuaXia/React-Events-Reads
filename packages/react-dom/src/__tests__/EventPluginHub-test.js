@@ -18,7 +18,7 @@ describe('EventPluginHub', () => {
   beforeEach(() => {
     jest.resetModules();
     React = require('react');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   it('should prevent non-function listeners, at dispatch', () => {

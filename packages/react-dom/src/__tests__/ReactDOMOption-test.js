@@ -17,7 +17,7 @@ describe('ReactDOMOption', () => {
   beforeEach(() => {
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactTestUtils = require('coreCode/test-utils');
   });
 
   it('should flatten children to a string', () => {

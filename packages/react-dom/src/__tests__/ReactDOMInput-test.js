@@ -37,7 +37,7 @@ describe('ReactDOMInput', () => {
 
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
+    ReactDOMServer = require('coreCode/server');
 
     container = document.createElement('div');
     document.body.appendChild(container);

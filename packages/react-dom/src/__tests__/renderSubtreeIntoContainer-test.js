@@ -12,7 +12,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const ReactDOM = require('react-dom');
-const ReactTestUtils = require('react-dom/test-utils');
+const ReactTestUtils = require('coreCode/test-utils');
 const renderSubtreeIntoContainer = require('react-dom')
   .unstable_renderSubtreeIntoContainer;
 

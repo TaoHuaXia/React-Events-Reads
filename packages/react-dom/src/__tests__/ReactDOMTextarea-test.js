@@ -22,8 +22,8 @@ describe('ReactDOMTextarea', () => {
   beforeEach(() => {
     React = require('react');
     ReactDOM = require('react-dom');
-    ReactDOMServer = require('react-dom/server');
-    ReactTestUtils = require('react-dom/test-utils');
+    ReactDOMServer = require('coreCode/server');
+    ReactTestUtils = require('coreCode/test-utils');
 
     renderTextarea = function(component, container) {
       if (!container) {

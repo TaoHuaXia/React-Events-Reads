@@ -11,7 +11,7 @@
 
 const React = require('react');
 const ReactDOM = require('react-dom');
-const ReactTestUtils = require('react-dom/test-utils');
+const ReactTestUtils = require('coreCode/test-utils');
 
 describe('findDOMNode', () => {
   it('findDOMNode should return null if passed null', () => {
